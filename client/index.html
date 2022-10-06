@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Node Js Email">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Nodemailer</title>
+    <style>
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            min-height: 100vh;
+            padding: 5rem 0;
+        }
+
+
+        .container {
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .container .field {
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 70px;
+            font-family: cursive;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                max-width: 400px
+            }            
+        }
+
+        @media screen and (max-width: 400px) {
+            .container {
+                max-width: 280px
+            }            
+        }
+    </style>
+</head>
+<body>
+    <form action="http://localhost:8081" class="container">
+        <h1 class="title">Nodemailer: About you</h1>
+        <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" name="name" placeholder="Text input">
+            </div>
+        </div>
+          
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control ">
+              <input class="input " name="email" type="email" placeholder="Email input" >
+            </div>
+          </div>
+          
+          <div class="field">
+            <label class="label">Describe yourself in a few words: </label>
+            <div class="control">
+              <textarea name="about" class="textarea" placeholder="write about you"></textarea>
+            </div>
+          </div>
+          
+          <div class="field is-grouped mt-5">
+            <div class="control">
+              <button type="submit" class="button is-link">Submit</button>
+            </div>
+            <div class="control">
+              <button type="reset" class="button is-link is-light">Cancel</button>
+            </div>
+          </div>
+    </form>
+</body>
+</html>
