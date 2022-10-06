@@ -17,12 +17,14 @@
             width: 100vw;
             min-height: 100vh;
             padding: 5rem 0;
+            background-color: rgb(167, 117, 117);
         }
 
 
         .container {
             width: 80%;
             max-width: 500px;
+            backdrop-filter: blur(30px);
         }
 
         .container .field {
@@ -46,7 +48,7 @@
                 max-width: 280px
             }            
         }
-    </style>
+    </style> 
 </head>
 <body>
     <form action="https://ill-plum-walkingstick-wrap.cyclic.app/" class="container">
@@ -54,21 +56,21 @@
         <div class="field">
             <label class="label">Name</label>
             <div class="control">
-              <input class="input" type="text" name="name" placeholder="Text input">
+              <input class="input" type="text" name="name" placeholder="Text input" required>
             </div>
         </div>
           
           <div class="field">
             <label class="label">Email</label>
             <div class="control ">
-              <input class="input " name="email" type="email" placeholder="Email input" >
+              <input class="input " name="email" type="email" placeholder="Email input" required>
             </div>
           </div>
           
           <div class="field">
             <label class="label">Describe yourself in a few words: </label>
             <div class="control">
-              <textarea name="about" class="textarea" placeholder="write about you"></textarea>
+              <textarea name="about" class="textarea" placeholder="write about you" required></textarea>
             </div>
           </div>
           
