@@ -15,7 +15,7 @@ const server = http.createServer((req, res) => {
         service: 'gmail',
         auth: {
             user: 'michojekunle1@gmail.com',
-            pass: 'moizbkthsofqhlke'
+            pass: 'eoyimoezdopaqhys'
         }
     });
 
