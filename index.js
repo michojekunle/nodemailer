@@ -20,7 +20,7 @@ const server = http.createServer((req, res) => {
     });
 
     const mailOptions = {
-        from: ' <michojekunle1@gmail.com>',
+        from: 'AMD <michojekunle1@gmail.com>',
         to: email,
         subject: 'Nodemailer: About you 😇😇',
         html: `<h2>Hello ${name}👋👋, </h2> <p>Here's a little About you: <br/> <br/> ${about}</p> <p>Thanks for trying me out. Made with ❤ by <a href='https://github.com/michojekunle'>AMD</a></p> <h6>An email sent with <a href='https://nodemailer.com/about/'>nodejs nodemailer</a></h6>`
